@@ -28,3 +28,5 @@ The code has been developed in R using a Jupyter notebook with core version 4.4.
 * NMOF
 
 The function codes used in this research paper can be found in the "Functions" folder.
+
+The folders entitled "BcSasim" contain the files with the instructions to apply simulated annealing method.
