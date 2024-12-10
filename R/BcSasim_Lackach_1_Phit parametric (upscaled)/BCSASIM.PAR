@@ -1,0 +1,43 @@
+                  Parameters for BCSASIM
+                  ********************
+
+START OF PARAMETERS:
+0  1  0  0  1                    \components: hist,varg,ivar,corr,cpdf
+0  1  0  0  1                    \weight:     hist,varg,ivar,corr,cpdf
+0                                \0=no transform, 1=log transform
+100                                \number of realizations
+1       2104763.97     1         \grid definition: nx,xmn,xsiz
+1        262787.5     1         \                 ny,ymn,ysiz
+3696     3035       0.1       \                 nz,zmn,zsiz
+690696969                        \random number seed
+3                                \debugging level
+bcsasim_nC.dbg                      \file for debugging output
+bcsasim_nC.out                      \file for simulation output
+0                                \schedule (0=automatic,1=set below)
+0.0   0.05  10   3  5  0.001     \   schedule: t0,redfac,ka,k,num,Omin
+10000  0.1                        \   maximum perturbations, reporting
+10000                             \   maximum number without a change
+0                                \conditioning data:(0=no, 1=yes)
+Condicional_OTRO.dat        \   file with data
+1   2   3   4                    \   columns: x,y,z,attribute
+-1.0e21    1.0e21                \   trimming limits
+0                                \file with histogram:(0=no, 1=yes)
+Histogram.dat                    \   file with histogram
+1   2                            \   column for value and weight
+30                               \   number of quantiles for obj. func.
+0                                \number of indicator variograms
+2.78                             \   indicator thresholds
+Gridded_SecData.dat              \file with gridded secondary data
+4                                \   column number
+0                                \   vertical average (0=no, 1=yes)
+-0.9063                             \correlation coefficient
+condicional.dat                  \file with paired data
+2    1    0                      \   columns for primary, secondary, wt
+0.062     0.2939                      \   minimum and maximum
+10                               \   number of primary thresholds
+10                               \   number of secondary thresholds
+1500                               \Variograms: number of lags
+0                                \   standardize sill (0=no,1=yes)
+1  0.00001                             \   nst, nugget effect                                          
+1  0.0007  0.0   0.0   0.0       \   it,cc,ang1,ang2,ang3
+50.0    50.0   16              \   a_hmax, a_hmin, a_vert
